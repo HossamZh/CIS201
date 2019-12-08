@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Class Assignment</title>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.container {
+  text-align: center;
+}
+
+p  {
+  color: Black;
+  font-family: verdana;
+  font-size: 160%;
+}
+
+table#Education  {
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:70%;
+  }
+
+#Education {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+#Education td, #Education th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Education tr:nth-child(even){background-color: #f2f2f2;}
+
+#Education tr:hover {background-color: #ddd;}
+
+#Education th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0066FF;
+  color: white;
+}
+
+</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:grey;">
+
+<div class="container">
+  <div class="jumbotron">
+   <h1 style="color:Red;"> Personal Information </h1> 
+     <p>Student Name: Hossam Al-Zahrani</p>
+     <p>Student ID: 201511048</p>
+    <img src="personal.png" alt="this is a personal photo" style="width:200px;height:200px;">
+
+
+  
+<h1>Education</h1>
+<h2>Alyamamah University 2015-2021</h2>
+<h3>Network engineer and security information</h3>      
+      
+
+
+
+<hr>
+
+
+<table id="Education">
+  <tr>
+    <th>Course code</th>
+    <th>Course Name</th>
+    <th>Course Project</th>
+  </tr>
+  <tr>
+    <td>CIS 201</td>
+    <td>Fundamentals of Web Design </td>
+    <td><a href="website.html">On-line portfolio</a></td>
+  </tr>
+  <tr>
+    <td>CIS 202</td>
+    <td>Introduction to Software Engineering</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>CIS 221</td>
+    <td>Introduction to Database Systems</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td>MTH 301</td>
+    <td>Linear Algebra</td>
+    <td>--</td>
+  </tr>
+    
+    
+  
+</table>
+      <button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var table = document.getElementById("Education");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);    
+  cell1.innerHTML = "NEW CELL1";
+  cell2.innerHTML = "NEW CELL2";
+  cell3.innerHTML = "NEW CELL3";    
+}
+</script>
+
+ <p style="font-size:50px;"> <a href="Experience.html">Experience</a> </p>
+
+    </div>
+ 
+</div>
+
+
+
+</body>
+</html>
